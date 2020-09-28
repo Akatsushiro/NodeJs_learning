@@ -1,0 +1,15 @@
+<h1>Todos os usuarios</h1>
+
+<table style="text-align: center;">
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    {{#each lista}}
+        <tr>
+            <td> {{nome}}</td>
+            <td> {{idade}}</td>
+            <td><a href="/delete_user/{{id}}"><button>Apagar</button></a></td>
+        </tr>
+    {{/each}}
+</table>
